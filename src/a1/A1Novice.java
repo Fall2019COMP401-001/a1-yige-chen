@@ -28,6 +28,7 @@ public class A1Novice {
 			}
 				    
 		    System.out.println(first_name.charAt(0) + ". " + last_name + ": " + total_cost);
-		}	
+		}
+		
 	}
 }

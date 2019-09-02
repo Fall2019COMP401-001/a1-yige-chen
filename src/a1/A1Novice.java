@@ -34,7 +34,8 @@ public class A1Novice {
 		scan.close();
 		
 		for (int i=0; i<total_number; i++) {
-			System.out.println(first_names[i].charAt(0) + ". " + last_names[i] + ": " + total_cost[i]);
+			String total_string = String.format("%.2f", total_cost[i]);
+			System.out.println(first_names[i].charAt(0) + ". " + last_names[i] + ": " + total_string);
 		}
 		
 	}

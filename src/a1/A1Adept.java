@@ -48,7 +48,6 @@ public class A1Adept {
 		int smallest_customer_index = smallest(total_spend);
 		double average_spend = average(total_spend);
 		
-		System.out.println(items[1]);
 		System.out.println("Biggest: " + first_names[biggest_customer_index] + " " + last_names[biggest_customer_index] + " (" + String.format("%.2f", total_spend[biggest_customer_index]) + ")");
 		System.out.println("Smallest: " + first_names[smallest_customer_index] + " " + last_names[smallest_customer_index] + " (" + String.format("%.2f", total_spend[smallest_customer_index]) + ")");
 		System.out.println("Average: " + String.format("%.2f", average_spend));

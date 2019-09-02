@@ -40,7 +40,7 @@ public class A1Jedi {
 				    		item_quantity[index] += quantity;
 				    		customer_quantity[index] += 1;
 				    		for (int n=0; n < j; n++) {
-				    			if (n > 1) {
+				    			if (n >= 1) {
 				    				if (item_list[n].contentEquals(item_list[n-1])) {
 				    					customer_quantity[index] += 1;
 				    				}

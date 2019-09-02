@@ -41,11 +41,12 @@ public class A1Jedi {
 				    		customer_quantity[index] += 1;
 				    		for (int n=0; n < j; n++) {
 				    			for (int m=0; m<n; m++) {
-				    				if (!item_list[n].contentEquals(item_list[m])) {
-				    					if (name.contentEquals(item_list[n])) {
-						    				customer_quantity[index] -= 1;
-				    					}
+				    				if (item_list[n].contentEquals(item_list[m])) {
+				    					customer_quantity[index] +=1;
 				    				}
+				    				if (name.contentEquals(item_list[n])) {
+					    				customer_quantity[index] -= 1;
+			    					}
 				    			
 				    			}
 				    		}

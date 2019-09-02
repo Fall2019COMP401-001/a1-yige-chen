@@ -29,18 +29,26 @@ public class A1Jedi {
 				first_names[i] = scan.next();
 				last_names[i] = scan.next();
 				int items_bought = scan.nextInt();
+				String[] item_list = new String[items_bought];
 				
 				for (int j=0; j<items_bought; j++) {
 					int quantity = scan.nextInt();
 					String name = scan.next();
+					item_list[j] = name;
 				    for (int index=0; index<total_item; index++) {
 				    	if (name.contentEquals(items[index])) {
-				    		customer_quantity[index] += 1;
 				    		item_quantity[index] += quantity;
+				    		customer_quantity[index] += 1;
+				    		for (int n=0; n < j; n++) {
+				    			if (name.contentEquals(item_list[n])) {
+				    				item_quantity[index] -= 1;
+				    			}
+				    		}
 				    	}
 				    }
 				
 				}
+				
 			}
 			for (int i=0; i<total_item; i++) {
 				if (item_quantity[i] == 0) {
